@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <title>login</title>
+</head>
+<header>
+    <h1>welcome to hamropustak</h1>
+    <ul>
+        <dl>contact</dl>
+    </ul>
+    <ul>
+        <dl>home</dl>
+    </ul>
+    
+   
+
+</form>
+<style>
+    .boarder{
+border-radius: 15px;
+    }
+    .input{
+        border-radius: 50px;
+    }
+
+    
+</style>
+    
+<body>
+    <div id="theme">
+    <button id="theme-toggle">chose themes</button></div><br><br>
+    <script src="script.js"></script>
+    <h2>login to continue</h2>
+</header>
+    <form action="/submit.php">
+    <div class="boarder"> <!--attributes used is for="",type="" and id=""-->
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter Name" border-radius: 15; required>
+    </div> 
+    <div> 
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="Enter Your Phone Number">
+    </div>
+    <div>
+        <label for="email">email</label>
+        <input type="email" placeholder="enter your email" required>
+    </div>
+    <div>
+        <label for="password">password</label>
+        <input type="password" placeholder="enter your password" required>
+
+    </div>
+    <div>
+        <label for="dob">date of birth</label>
+        <input id="dob" type="date" required>
+    </div>
+    <div><!--dropdown button demo using label and select tag and using id
+         attributes with value disabled selected-->
+        <label for="gender">gender</label>
+        <select id="gender"required><!--here required attributes simply tells that it is 
+            compulosry to fill in the form-->
+            <option value="disabled selected">select your gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+            
+        </select>
+    </div>
+    <div>
+        <!--using radio buttons to choose any one of the box-->
+        <h3>choose the correct option in the following</h3>
+        <p>what is the fullform of cpu?</p>
+        <input id="chandra prakash upadhya" type="radio" name="option" value="chandra prakash upadhya">
+        <label for="chandra prakash upadhya">chandra prakash upadhya</label><br>
+        <input id="central power unit" type="radio" name="option" value="central power unit">
+        <label for="central power unit">central power unit</label><br>
+        <input id="central processing unit" type="radio" name="option" value="central processing unit">
+        <label for="central processing unit">central processing unit</label><br>
+        <input id="central prakash unit" type="radio" name="option" value="central parkash unit">
+        <label for="central prakash unit">central prakash unit</label>
+    </div>
+    <div>
+        <textarea id="comments" placeholder="type your idea here" rows="4">your text here</textarea><br>
+        <label for="comments">you can expand your comment box to review your comment</label>
+    </div>
+    <div id="submit">
+        <button type="submit" margin="0" padding="0" border-radius:20px;>submit</button><br>
+    </div>
+
+</body>
+</html>
